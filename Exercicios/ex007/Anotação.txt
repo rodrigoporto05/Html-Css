@@ -1,0 +1,1 @@
+Caso o código fique vermelho quer dizer que ele não deve ser mais usado

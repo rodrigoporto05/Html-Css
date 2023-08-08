@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+<!--Caso precise colcocar algum item na frente de outro, ele trocará automaticamente no site por causa da tag ol -->
+<!--Também é possível personalizar a lista com a tag type, além de também poder usar a tag start para saber de onde começar a lista, por exemplo do número 3-->
+    <h2>Listas não ordenadas</h2>
+    <ul type="disc">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+    <!--Nas listas não ordenadas as opções de personalização são square, circle e disc-->
+    <h2>Algumas linguagens</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Bascic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol> <br>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+<!--O comando start atende por caracteres numéricas, ou seja, em uma lista a,b,c,d, para usar a tag start colocamos o número para representar a letra-->
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>PlayStation</li>
+            <ul type="disc">
+                <li>Hollow Knight</li>
+                <li>Shadow of the Colossus</li>
+            </ul><br>
+        <li>Xbox 360</li>
+            <ul type="disc">
+                <li>Fifa 17</li>
+                <li>Viva Pinata</li>
+            </ul>
+    </ol>
+<!--Também é possível misturar a ordenada com a não-->
+<h2>Lista de definição</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação de um design de um site</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programaçãoo para a criação de interrativadade de um site</dd>
+</dl>
+</body>
+</html>

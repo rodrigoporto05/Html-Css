@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em; /*O tamanho padrão é 16px, normalmente*/
+            /*Medidas absolutas: cm, mm, in(polegada), px, pt(ponto), pc(paica)
+            
+            Medidas relativas: em (relativo ao tamanho M), ex (relativo ao tamanho x), rem(relativo ao fonte configurada no body), vw(relativo à largura da tela), vh(relativo à altura da tela), %*/
+            /*16px = 1em, geralmente*/
+            /*Algumas tags para pesonalização da fonte:
+            font-weight (negrito), font-style, text-decoration
+            *A fonte usada precisa possibilitar o uso dessas variações*/
+            /*Existe um modo de simplificar tudo usando uma tag que junta todas as personalizações em uma linha*/
+        }
+        h1{
+        font: italic bolder 3em 'Arial', sans-serif;
+        /*A ordem deve ser a mesma sempre: font-style -> font-weight -> font-size -> font-family*/
+        }    
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati itaque exercitationem neque tenetur? Magni dolores impedit placeat maxime laboriosam quas distinctio saepe et. Id corrupti, nisi quae cumque ipsam velit!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis est tempore, at impedit ducimus ea, repellat nam earum autem quasi et quaerat dignissimos iure minima dolore corporis. Et, cumque?</p>
+        <h2>Subtítulo do exercício</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi maiores, possimus asperiores inventore laboriosam debitis dicta omnis impedit beatae illo modi aliquam ducimus corrupti quisquam voluptates mollitia. Libero, illum adipisci.</p>
+</body>
+</html>

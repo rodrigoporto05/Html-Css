@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--Diferente da tag img, a tag picture permite que possamos personalizar o tamanho da imagem de acordo com o tamanho da tela em que o site será aberto-->
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5"</p>
+    <audio src="midia/Underground Academy - Hanu Dixit.mp3" controls autoplay></audio>
+    <!--Existem navegadores que não são compatíveis com alguns formatos, então pode-se usar os formatos MP3, OGG, WAV. Porém existe outra maneira de adicionar o áudio sem precisar saber a compatibilidade do navegador-->
+    <h2>Segudndo teste</h2>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Underground Academy - Hanu Dixit.mp3" type="audio/mpeg">
+        <source src="midia/Underground Academy - Hanu Dixit.ogg" type="audio/ogg">
+        <source src="midia/Underground Academy - Hanu Dixit.wav" type="audio/wav">
+        <!--É necessário ter os arquivos baixados. A ordem em que o computador vai tentar carregar o áudio também vai ser levada em conta-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Underground Academy - Hanu Dixit.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        <!--Caso o navegador não leia nenhum formato essa mensagem aparecerá-->
+        <!--Não usar o arquivo wav porque é muito pesado-->
+        <!--Na tag preload pode-se usar o auto (carrega o áudio todo junto com o site), metadata(carrega as informações do áudio, como a duração) e none (não carrega nada até que o usuário clique em reproduzir)-->
+    </audio>
+</body>
+</html>

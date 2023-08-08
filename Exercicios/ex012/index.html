@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserido vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor</p>
+    <video src="midia/meu-video.mp4" width="500" controls></video>
+<!--Do mesmo jeito que áudio, alguns navegadores não reconhecem alguns formatos, então existe outra forma para colocar mais de um formato do mesmo vídeo para que funcione em todos os navegadores-->
+    <h2>Segundo teste</h2>
+    <video width="560" poster="imagens/foto-m.png" controls autoplay loop>
+         <source src="midia/meu-video.mp4" type="video/mp4">
+         <source src="midia/meu-video.ogv" type="video/ogg">
+         <p>Seu navegador não tem compatibilidade com repordução de vídeos</p>
+<!--Também é possível colocar uma thumbanil com a tag poster-->
+<!--Vídeos hospedados localmente e muito acessados consomem muita banda, ou seja, o preço para manter o site será mais caro. Há outro jeito além de usar local-->   
+<!--A tag loop faz o vídeo recomeçar quando acabar--> 
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KGQSYJzaXgI?si=_99lF4_YIs16Ov9D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!--Os vídeos vindo do youtube consomem dados do youtube, ou seja, sem custos para o o site-->
+<!--Caso o vídeo não possa ser visto por outras pessoas então o youtube não vai poder ajudar na hospedagem. O vimeo é uma boa opção, apesar de não ser tão barato-->
+<h1>Inserindo vídeo do vimeo</h1>
+<iframe src="https://player.vimeo.com/video/344202627?h=37491ebf82&autoplay=1&loop=1&color=0000ff&title=0&byline=0&portrait=0" width="560" height="232" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>  
+</body>
+</html>
