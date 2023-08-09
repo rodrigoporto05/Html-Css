@@ -97,11 +97,11 @@ p{
     line-height: 1.8em;
 }
 
-h2{
+main>h2{
     font-family: 'idroid.otf';
     padding-left: 20px;
-    color: rgb(5, 50, 5);
-    background-color: rgba(6, 152, 6, 0.322);
+    color: var(--cor4);
+    background-color: var(--cor1);
     text-align: justify;
 }
 
