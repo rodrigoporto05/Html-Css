@@ -159,6 +159,7 @@ aside>ul{
 
 li{
     list-style-type: '✔';
+    text-align: justify;
 }
 
 li#esquerda{
