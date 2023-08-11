@@ -159,12 +159,16 @@ aside>ul{
 }
 
 li{
-    list-style-type: '✔';
+    list-style: none;
     text-align: justify;
 }
 
 li#esquerda{
-    margin-left: 35px;
+    margin-left: 45px;
+}
+
+li#direita{
+    padding-left: 20px;
 }
 
 footer{
