@@ -160,7 +160,7 @@ h3{
 
 aside>ul{
     columns: 2;
-    column-width: 10px;
+    column-width: 200px;
 }
 
 li{
