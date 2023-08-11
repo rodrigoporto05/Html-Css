@@ -159,11 +159,11 @@ aside>ul{
 
 li{
     list-style-type: '✔';
-    text-align: center;
+    text-align: justify;
 }
 
 li#esquerda{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 footer{
