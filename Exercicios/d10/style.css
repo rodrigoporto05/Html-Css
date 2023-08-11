@@ -106,6 +106,10 @@ main>h2{
     text-align: justify;
 }
 
+h2#primeiro{
+    padding-right: 10px;
+}
+
 
 img{
     width: 100%;
