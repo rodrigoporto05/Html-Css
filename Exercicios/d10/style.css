@@ -160,7 +160,7 @@ aside>ul{
 
 li{
     list-style: none;
-    text-align: justify;
+    text-align: left;
 }
 
 li#esquerda{
