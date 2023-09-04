@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1: #E1D3BB;
+    --cor2: #DBB674;
+    --cor3: #A88B59;
+    --cor4: #5C4C31;
+    --cor5: #5C564C;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Courgette', cursive;
+    --fonte3: 'Satisfy', cursive;
+    --fonte4: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    background-color: var(--cor5);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: inset 4px 4px 15px 4px rgba(0, 0, 0, 0.405);
+    height: 160px;
+}
+
+header>div{
+    position: absolute;
+    width: 40px;
+    margin-left: 7px;
+    
+} 
+
+img{
+    width: 40px;
+    height: 51px;
+}
+
+header>h1{
+    font-size: 3vw;
+    padding-top: 15px;
+    font-family: var(--fonte2);
+}
+
+header>p{
+    font-size: 1.4vw;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family: var(--fonte1);    
+}
+
+header>nav>a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav{
+    padding-bottom: 7px;
+    padding-top: 18px;
+    font-family: var(--fonte1);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ul li ul{
+    position: absolute;
+    width: 300px;
+    display: none;
+}
+
+ul li ul li { 
+    background: white; 
+    display: block;
+}
+
+ul li ul li a{
+    display:block !important;
+    color: black;
+    text-decoration: none;
+    font-family: var(--fonte1);
+}
+
+ul li ul li:hover{
+    background: var(--cor5)
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu:hover{
+    color: white;
+}
+
+#img1{
+    background-image: url(imagens/cortina-4-G.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.378);
+}
+
+#img2{
+    background-image: url(imagens/cortina-2-G.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.378);
+}
+
+#img3{
+    background-image: url(imagens/cortina-1-G.jpeg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    margin: 100px 50px 40px;
+    box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.378); 
+}
+
+#img1>p{
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.552);
+    display: inline-block;
+    font-size: 4em;
+    font-family: var(--fonte3);
+    margin-top: 150px;
+    margin-left: 20px;
+    text-indent: 30px;
+}
+
+#img2>p{
+    text-align: right;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.552);
+    display: inline-block;
+    font-size: 4em;
+    font-family: var(--fonte3);
+    margin-top: 150px;
+    margin-left: 30vw;
+    text-indent: 30px;
+}
+
+#img3>p{
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.552);
+    display: inline-block;
+    font-size: 4em;
+    font-family: var(--fonte3);
+    margin-top: 150px;
+    margin-left: 20px;
+    text-indent: 30px;
+}
+
+footer{
+    background-color: var(--cor5);
+    height: 200px;
+}
+
+footer>p{
+    font-family: var(--fonte2);
+    color: white;
+    text-indent: 30px;
+    font-size: 2.4em;
+    padding-top: 5px;
+}
+
+footer>hr{
+    margin: 5px 10px;
+}
+
+#insta{
+    font-family: var(--fonte1);
+    font-size: 1em;
+}
+
+#insta>a:hover{
+    text-decoration: underline;
+}
+
+#info{
+    font-family: var(--fonte4);
+    font-size: 1em;
+    text-indent: 0px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#licença{
+    font-family: var(--fonte4);
+    font-size: 1em;
+    margin-top: 13px;
+}
