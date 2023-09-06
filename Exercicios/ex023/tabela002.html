@@ -4,18 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 3px;
+            background-color: rgba(128, 128, 128, 0.4);
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 3px;
+            background-color: rgba(128, 128, 128, 0.4);
+        }
+
+        tbody > tr:nth-child(2n){ /*Efeito zebrado na tabela. Pode usar odd (ímpar) e even (par) também*/
+            background-color: lightgray;
+        }
+
+        #total{
+            background-color: rgba(255, 255, 0, 0.738);
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption> 
+            População de algumas Unidades Federativas
+        </caption>
         <thead>
-
+            <tr>
+                <th scope="col">
+                    Estado
+                </th>
+                <th scope="col">
+                    População
+                </th>
+            </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>
+                    São Paulo
+                </td>
+                <td class="num">
+                    <strong>44.420.459</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Minas Gerais
+                </td>
+                <td class="num">
+                    <strong>20.538.718</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de Janeiro
+                </td>
+                <td class="num">
+                    <strong>16.054.524</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bahia
+                </td>
+                <td class="num">
+                    <strong>14.136.417</strong>
+                </td>
+            </tr>
         </tbody>
         <tfoot>
-            
+            <tr>
+                <th scope="row">
+                    Total de habitantes
+                </th>
+                <td id="total" class="num">
+                    <strong>XXXXXX</strong>
+                </td>
+            </tr>
         </tfoot>
     </table>
 </body>
