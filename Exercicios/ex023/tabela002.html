@@ -8,6 +8,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         
         caption{
@@ -17,6 +18,12 @@
             background-color: rgba(128, 128, 128, 0.4);
             border: 1px solid black;
             border-bottom: 0px;
+        }
+
+        thead > tr > th{ /*Cabeçalho gruda no topo da página quando rolar pra baixo*/
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
         }
 
         td{
