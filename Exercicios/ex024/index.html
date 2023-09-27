@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .cnome{
+            background-color: green;
+        }
+
+        .csexo{
+            background-color: red;
+        }
+
+        .cprof{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo" span="2">
+        <col class="cprof">
+    </colgroup>
+    <caption><strong>Cadastro</strong></caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jardineira</td>
+    </tr>
+    <tr>
+        <td>Paulo</td>
+        <td>M</td>
+        <td>23</td>
+        <td>Piloto</td>
+    </tr>
+    <tr>
+        <td>Miguel</td>
+        <td>M</td>
+        <td>34</td>
+        <td>Bombeiro</td>
+    </tr>
+    <tr>
+        <td>Marta</td>
+        <td>F</td>
+        <td>27</td>
+        <td>Cozinheira</td>
+    </tr>
+    </table>
+</body>
+</html>
