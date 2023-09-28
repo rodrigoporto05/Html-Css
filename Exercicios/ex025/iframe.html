@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!--Tamanho padrão 300x150-->
+    <p>
+        Acessando o site do 
+        <iframe scrolling="auto" src="https://www.cursoemvideo.com" frameborder="0"> 
+        <!--No scrolling pode usar auto (padrão), yes (mesmo que não tenha conteúdo suficiente vai ter a barra de rolagem) e no (nunca vai ter rolagem)-->
+        <!--O frameborder só se pode usar 0 (tira a borda) ou qualquer outro valor (colocar a borda)-->
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a></iframe>
+        <!--Caso o navegador não tiver compatibilidade com o iframe, dentro do iframe podemos colocar algo para substituir-->
+    </p>
+</body>
+</html>
